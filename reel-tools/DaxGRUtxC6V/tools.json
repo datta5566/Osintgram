@@ -1,0 +1,29 @@
+{
+  "source_reel": "https://www.instagram.com/reel/DaxGRUtxC6V/",
+  "review_status": "partial-transcript-only",
+  "tools": [
+    {
+      "name": "Maltego",
+      "identification": "confirmed",
+      "type": "desktop link-analysis software",
+      "official_url": "https://www.maltego.com/downloads/",
+      "vendored_in_repository": false,
+      "automation_enabled": false
+    },
+    {
+      "name": "FaceCheck.ID",
+      "identification": "probable-not-confirmed",
+      "type": "web facial-search service",
+      "official_url": "https://facecheck.id/",
+      "vendored_in_repository": false,
+      "automation_enabled": false,
+      "privacy_restriction": "Use only with consent or explicit authorization. No stalking, doxxing, harassment, or identification of private individuals."
+    },
+    {
+      "name": "Tool #1",
+      "identification": "unknown-pending-full-reel",
+      "vendored_in_repository": false,
+      "automation_enabled": false
+    }
+  ]
+}
