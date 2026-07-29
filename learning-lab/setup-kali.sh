@@ -22,10 +22,11 @@ export PATH="$HOME/.local/bin:$PATH"
 
 install_pipx_tool() {
   local package="$1"
-  if pipx list --short 2>/dev/null | grep -qi "^${package%%[*}"; then
-    echo "[OK] $package already installed"
+  if pipx list --short 2>/dev/null | grep -qi "^${package}[[:space:]]"; then
+    echo "[OK] $package already installed; checking for updates"
+    pipx upgrade "$package" || true
   else
-    pipx install "$package" || pipx upgrade "$package" || true
+    pipx install "$package"
   fi
 }
 
