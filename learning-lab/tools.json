@@ -1,0 +1,73 @@
+{
+  "source_reel": "https://www.instagram.com/reel/DaxGRUtxC6V/",
+  "purpose": "Authorized OSINT learning and defensive self-audit",
+  "reel_identification_note": "Only Maltego was confirmed from the externally available reel information. FaceCheck.ID remains probable. Other tools are included because they are useful for the learning lab, not because they were confirmed in the reel.",
+  "tools": [
+    {
+      "name": "Maltego",
+      "category": "visual-link-analysis",
+      "source": "https://www.maltego.com/downloads/",
+      "reel_status": "confirmed",
+      "setup": "manual-official-installer",
+      "safe_scope": "dummy data or authorized investigations"
+    },
+    {
+      "name": "Sherlock",
+      "category": "username-osint",
+      "source": "https://github.com/sherlock-project/sherlock",
+      "reel_status": "not-confirmed-learning-addition",
+      "setup": "pipx",
+      "safe_scope": "your own username or authorized subject"
+    },
+    {
+      "name": "Maigret",
+      "category": "username-osint",
+      "source": "https://github.com/soxoj/maigret",
+      "reel_status": "not-confirmed-learning-addition",
+      "setup": "pipx",
+      "safe_scope": "your own username or authorized subject"
+    },
+    {
+      "name": "SpiderFoot",
+      "category": "osint-automation",
+      "source": "https://github.com/smicallef/spiderfoot",
+      "reel_status": "not-confirmed-learning-addition",
+      "setup": "git-clone-and-venv",
+      "safe_scope": "owned or explicitly authorized assets; passive modules first"
+    },
+    {
+      "name": "theHarvester",
+      "category": "domain-osint",
+      "source": "https://github.com/laramies/theHarvester",
+      "reel_status": "not-confirmed-learning-addition",
+      "setup": "Kali package or official installation",
+      "safe_scope": "domains you own or are authorized to assess"
+    },
+    {
+      "name": "ExifTool",
+      "category": "file-metadata",
+      "source": "https://exiftool.org/",
+      "reel_status": "not-confirmed-learning-addition",
+      "setup": "system-package-or-official-installer",
+      "safe_scope": "files you own or are authorized to examine"
+    },
+    {
+      "name": "Shodan CLI",
+      "category": "internet-exposure-self-audit",
+      "source": "https://cli.shodan.io/",
+      "reel_status": "not-confirmed-learning-addition",
+      "setup": "pipx",
+      "safe_scope": "your own public IP/assets or written authorization",
+      "secret_policy": "API key must remain local and must not be committed"
+    },
+    {
+      "name": "FaceCheck.ID",
+      "category": "manual-face-search",
+      "source": "https://facecheck.id/",
+      "reel_status": "probable-not-confirmed",
+      "setup": "browser-reference-only",
+      "automation": false,
+      "safe_scope": "your own image or clear consent only"
+    }
+  ]
+}
